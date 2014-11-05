@@ -61,6 +61,7 @@ int main(int argc,char **argv)
 	std::vector<cv::KeyPoint> keypoints1, keypoints2;
 	cv::Mat fundemental= rmatcher.match(image1,image2,matches, keypoints1, keypoints2);
 	std::cout<<fundemental<<std::endl;
+	std::cout<<keypoints1.size()<<std::endl;
 
 	// draw the matches
 //	cv::Mat imageMatches;
@@ -88,8 +89,7 @@ int main(int argc,char **argv)
 	// Convert keypoints into Point2f	
 //	std::vector<cv::Point2f> points1, points2;
 	std::vector<cv::Point3f> points_xyz1,points_xyz2;
-	points_xyz1 = compute3dPosition(imageD1,keypoints1);
-	points_xyz2 = compute3dPosition(imageD2,keypoints2);
+	compute3dPosition(imageD1,imageD2,keypoints1,keypoints2,points_xyz1,points_xyz2);
 
 	std::cout<<points_xyz1.size()<<std::endl;
 	std::cout<<points_xyz2.size()<<std::endl;

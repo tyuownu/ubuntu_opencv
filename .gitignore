@@ -10,3 +10,4 @@ src/function.h
 /.metadata/
 .*.swp
 /src/.svn/
+*.pyc

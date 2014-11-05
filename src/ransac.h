@@ -14,22 +14,31 @@
 #define camera_fy 516.5
 #define camera_cx 318.6
 #define camera_cy 255.3
-std::vector<cv::Point3f> compute3dPosition(cv::Mat dep,std::vector<cv::KeyPoint> kp)
+void compute3dPosition(cv::Mat dep1,
+					   cv::Mat dep2,
+					   std::vector<cv::KeyPoint> kp1,
+					   std::vector<cv::KeyPoint> kp2,
+					   std::vector<cv::Point3f>& location1,
+					   std::vector<cv::Point3f>& location2)
 {
 	std::cout<<"start compute 3d position"<<std::endl;
-	std::vector<cv::Point3f> location;
-	for(int i=0; i<kp.size(); i++)
+	for(int i=0; i<kp1.size(); i++)
 	{
-		double u = kp[i].pt.x, v = kp[i].pt.y;
-		unsigned short d = dep.at<unsigned short>(round(v),round(u));
-		if (d == 0)
+		double u1 = kp1[i].pt.x, v1 = kp1[i].pt.y;
+		double u2 = kp2[i].pt.x, v2 = kp2[i].pt.y;
+		unsigned short d1 = dep1.at<unsigned short>(round(v1),round(u1));
+		unsigned short d2 = dep2.at<unsigned short>(round(v2),round(u2));
+		if (d1 == 0 || d2 == 0)
 		{
 			continue;
 		}
-		double z = double(d)/camera_factor;
-		double x = ( u - camera_cx) * z / camera_fx;
-		double y = ( v - camera_cy) * z / camera_fy;
-		location.push_back(cv::Point3f(x,y,z));
+		double z1 = double(d1)/camera_factor;
+		double x1 = ( u1 - camera_cx) * z1 / camera_fx;
+		double y1 = ( v1 - camera_cy) * z1 / camera_fy;
+		location1.push_back(cv::Point3f(x1,y1,z1));
+		z1 = double(d2)/camera_factor;
+		x1 = ( u2 - camera_cx) * z1 / camera_fx;
+		y1 = ( v2 - camera_cy) * z1 / camera_fy;
+		location2.push_back(cv::Point3f(x1,y1,z1));
 	}
-	return location;
 }

@@ -6,8 +6,8 @@ from function import s_alpha_beta
 from function import dist
 import sys
 
-p11 = np.loadtxt('/home/tyu/ubuntu_opencv/result/p1.txt',delimiter='  ')
-p22 = np.loadtxt('/home/tyu/ubuntu_opencv/result/p2.txt',delimiter='  ')
+p11 = np.loadtxt('/home/tyu/ubuntu_opencv/result/p1.txt',delimiter=' ')
+p22 = np.loadtxt('/home/tyu/ubuntu_opencv/result/p2.txt',delimiter=' ')
 p1 = p11.transpose()
 p2 = p22.transpose()
 if max(p1.shape[0],p2.shape[1])<10:
