@@ -1,0 +1,12 @@
+/bin/
+/build/
+p1.txt
+p2.txt
+src/a.cpp
+src/ros.cpp
+src/surf.cpp
+src/function.h
+/.svn/
+/.metadata/
+.*.swp
+/src/.svn/

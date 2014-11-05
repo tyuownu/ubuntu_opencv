@@ -3,6 +3,7 @@
 
 //#include "stdafx.h"
 #include "matcher.h"
+#include "ransac.h"
 //#include "function.h"
 #include <iostream>
 #include <fstream>
@@ -59,6 +60,7 @@ int main(int argc,char **argv)
 	std::vector<cv::DMatch> matches;
 	std::vector<cv::KeyPoint> keypoints1, keypoints2;
 	cv::Mat fundemental= rmatcher.match(image1,image2,matches, keypoints1, keypoints2);
+	std::cout<<fundemental<<std::endl;
 
 	// draw the matches
 //	cv::Mat imageMatches;
@@ -75,38 +77,7 @@ int main(int argc,char **argv)
 			cv::Point(640,255.3),
 			cv::Scalar(0,0,0)
 			);
-	line(image1,
-			cv::Point(318.6,0),
-			cv::Point(318.6,480),
-			cv::Scalar(0,0,0)
-			);
-	line(image2,
-			cv::Point(0,255.3),
-			cv::Point(640,255.3),
-			cv::Scalar(0,0,0)
-			);
-	line(image2,
-			cv::Point(318.6,0),
-			cv::Point(318.6,480),
-			cv::Scalar(0,0,0)
-			);
 
-	//write line to imageMatches
-	line(imageMatches,
-			cv::Point(0,255.3),
-			cv::Point(1279,255.3),
-			cv::Scalar(0,0,255)
-			);
-	line(imageMatches, 
-		cv::Point(958.6,0),
-		cv::Point(958.6,480),
-		cv::Scalar(0,255,0)
-		);
-
-	line(imageMatches, 
-		cv::Point(318.6,0),
-		cv::Point(318.6,480),
-		cv::Scalar(0,255,0)
 		);*/
 //	cv::namedWindow("Matches");
 //	cv::imshow("Matches",imageMatches);
@@ -115,10 +86,43 @@ int main(int argc,char **argv)
 	/////////////////////
 	
 	// Convert keypoints into Point2f	
-	std::vector<cv::Point2f> points1, points2;
+//	std::vector<cv::Point2f> points1, points2;
 	std::vector<cv::Point3f> points_xyz1,points_xyz2;
+	points_xyz1 = compute3dPosition(imageD1,keypoints1);
+	points_xyz2 = compute3dPosition(imageD2,keypoints2);
 
-	for (std::vector<cv::DMatch>::const_iterator it= matches.begin();
+	std::cout<<points_xyz1.size()<<std::endl;
+	std::cout<<points_xyz2.size()<<std::endl;
+
+
+
+
+
+	cv::Mat p1 = cv::Mat(points_xyz1).t();
+	cv::Mat p2 = cv::Mat(points_xyz2).t();
+	cv::Mat mat;
+//	mat = p1;
+//	std::cout<<mat<<std::endl;
+	int iterations = 0;
+	double distance = 100.0;
+	double Error = 0.0;
+	while(iterations < 0)
+	{
+		cv::Mat np1 , np2, np1_, np2_;
+		int num = 0;
+		for(int i=0; i<points_xyz1.size(); i++)
+		{
+			num++;
+			cv::Mat temp = p1.col(i).clone();
+//			temp.copyTo(np1.col(i));
+			np1.push_back(temp);
+			temp = p2.col(i).clone();
+			np2.push_back(temp);
+		}
+		iterations++;
+	}
+
+/*	for (std::vector<cv::DMatch>::const_iterator it= matches.begin();
 			 it!= matches.end();
 			 ++it) {
 
@@ -148,28 +152,10 @@ int main(int argc,char **argv)
 				 continue;
 			 
 			 
-	}
+	}*/
 
 
 
-
-//	std::cout<<"The number of matched points :"<<points_xyz1.size()<<std::endl;
-	int pxyz_size = points_xyz1.size();
-	double	fx = 517.3,
-			fy = 516.5,
-			cx = 318.6,
-			cy = 255.3;
-/*	double fx = 525.0,
-		   fy = 525.0,
-		   cx = 319.5,
-		   cy = 239.5;*/
-	for(int i = 0;i < pxyz_size; i++)
-	{
-		points_xyz1[i].x = (points_xyz1[i].x - cx) * points_xyz1[i].z / fx;
-		points_xyz1[i].y = (points_xyz1[i].y - cy) * points_xyz1[i].z / fy;
-		points_xyz2[i].x = (points_xyz2[i].x - cx) * points_xyz2[i].z / fx;
-		points_xyz2[i].y = (points_xyz2[i].y - cy) * points_xyz2[i].z / fy;
-	}
 
 	std::ofstream p1out("p1.txt"), p2out("p2.txt");
 	if(!p1out||!p2out)
@@ -181,21 +167,16 @@ int main(int argc,char **argv)
 //	out<<"p1 = "<<std::endl<<std::endl;
 //true location
 	//write p1 location to out.txt
-//	for(int i = 0 ; i < points_xyz1.size(); i++)
-//		out<<points_xyz1[i]<<"   "<<points1[i]<<std::endl;
+	for(int i = 0 ; i < points_xyz1.size(); i++)
+		p1out<<points_xyz1[i].x<<" "<<points_xyz1[i].y<<" "<<points_xyz1[i].z<<std::endl;
 //	out<<std::endl;
 	//write p2 location to out.txt
 //	out<<"p2 = "<<std::endl<<std::endl;
-//	for(int i = 0 ; i < points_xyz1.size(); i++)
-//		out<<points_xyz2[i]<<"    "<<points2[i]<<std::endl;
+	for(int i = 0 ; i < points_xyz2.size(); i++)
+		p2out<<points_xyz2[i].x<<" "<<points_xyz2[i].y<<" "<<points_xyz2[i].z<<std::endl;
 //	out<<"p1 = "<<std::endl<<std::endl<<points_xyz1<<std::endl;
 //	out<<"p2 = "<<std::endl<<std::endl<<points_xyz2<<std::endl;
 //	out.close();
-	for(int i = 0; i < points_xyz1.size(); i++)
-	{
-		p1out<<points_xyz1[i].x<<"  "<<points_xyz1[i].y<<"  "<<points_xyz1[i].z<<std::endl;
-		p2out<<points_xyz2[i].x<<"  "<<points_xyz2[i].y<<"  "<<points_xyz2[i].z<<std::endl;
-	}
 	p1out.close();p2out.close();
 
 	//////////////////////////centroid/////////

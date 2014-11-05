@@ -31,6 +31,5 @@ std::vector<cv::Point3f> compute3dPosition(cv::Mat dep,std::vector<cv::KeyPoint>
 		double y = ( v - camera_cy) * z / camera_fy;
 		location.push_back(cv::Point3f(x,y,z));
 	}
-	std::cout<<"out the compute function"<<std::endl;
 	return location;
 }
