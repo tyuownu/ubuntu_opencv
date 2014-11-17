@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Xiang GAO, 2014.5
 
 # Version required
@@ -69,3 +70,10 @@ ADD_DEFINITIONS(-Wno-deprecated -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED
 # Source directories
 ADD_SUBDIRECTORY( ${PROJECT_SOURCE_DIR}/src )
 MESSAGE(STATUS "The project CMakeList.txt is DONE!")
+=======
+cmake_minimum_required(VERSION 2.8)
+project(a)
+add_subdirectory(src bin)
+
+
+>>>>>>> 042da7148ea7881facb82f9d796d2581dc85688c

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 build/
 include/
 lib/
@@ -11,3 +12,18 @@ tools/ply/
 tools/rgb/
 tools/rgb_index/
 bin/
+=======
+/bin/
+/build/
+p1.txt
+p2.txt
+src/a.cpp
+src/ros.cpp
+src/surf.cpp
+src/function.h
+/.svn/
+/.metadata/
+.*.swp
+/src/.svn/
+*.pyc
+>>>>>>> 042da7148ea7881facb82f9d796d2581dc85688c

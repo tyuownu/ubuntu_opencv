@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 FIND_PACKAGE( OpenCV REQUIRED )
 find_package(PCL 1.7 REQUIRED)
 
@@ -39,3 +40,9 @@ ADD_EXECUTABLE( convert2PCD convert2PCD.cpp )
 TARGET_LINK_LIBRARIES( convert2PCD SLAM3d)
 
 ADD_SUBDIRECTORY( ./exp1 )
+=======
+add_executable(a ransac.cpp)
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+find_package(OpenCV REQUIRED)
+target_link_libraries(a ${OpenCV_LIBS})
+>>>>>>> 042da7148ea7881facb82f9d796d2581dc85688c
