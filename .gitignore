@@ -1,0 +1,13 @@
+build/
+include/
+lib/
+image/
+g2o*
+*.g2o
+tools/dep/
+tools/dep_index/
+tools/pcd/
+tools/ply/
+tools/rgb/
+tools/rgb_index/
+bin/

@@ -1,0 +1,356 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BLACK	const.h	97;"	d
+BLUE	const.h	101;"	d
+BOLDBLACK	const.h	105;"	d
+BOLDBLUE	const.h	109;"	d
+BOLDCYAN	const.h	111;"	d
+BOLDGREEN	const.h	107;"	d
+BOLDMAGENTA	const.h	110;"	d
+BOLDRED	const.h	106;"	d
+BOLDWHITE	const.h	112;"	d
+BOLDYELLOW	const.h	108;"	d
+CYAN	const.h	103;"	d
+EXCEPTION	const.h	/^    EXCEPTION(string desp="Unknown Exception") {$/;"	f	class:EXCEPTION	access:public	signature:(string desp=�)
+EXCEPTION	const.h	/^class EXCEPTION$/;"	c
+EXCEPTION::EXCEPTION	const.h	/^    EXCEPTION(string desp="Unknown Exception") {$/;"	f	class:EXCEPTION	access:public	signature:(string desp=�)
+EXCEPTION::desp	const.h	/^    string desp;$/;"	m	class:EXCEPTION	access:protected
+EXCEPTION::disp	const.h	/^    void disp() {$/;"	f	class:EXCEPTION	access:public	signature:()
+GRAPHIC_END_NEED_GLOBAL_OPTIMIZATION	const.h	/^ public: GRAPHIC_END_NEED_GLOBAL_OPTIMIZATION()  : EXCEPTION("Graphic end find a keyframe and need to call g2o to perform a global optimization.") {$/;"	f	class:GRAPHIC_END_NEED_GLOBAL_OPTIMIZATION	access:public	signature:()
+GRAPHIC_END_NEED_GLOBAL_OPTIMIZATION	const.h	/^class GRAPHIC_END_NEED_GLOBAL_OPTIMIZATION : public EXCEPTION$/;"	c	inherits:EXCEPTION
+GRAPHIC_END_NEED_GLOBAL_OPTIMIZATION::GRAPHIC_END_NEED_GLOBAL_OPTIMIZATION	const.h	/^ public: GRAPHIC_END_NEED_GLOBAL_OPTIMIZATION()  : EXCEPTION("Graphic end find a keyframe and need to call g2o to perform a global optimization.") {$/;"	f	class:GRAPHIC_END_NEED_GLOBAL_OPTIMIZATION	access:public	signature:()
+GREEN	const.h	99;"	d
+GetPara	ParameterReader.cpp	/^string ParameterReader::GetPara( const string& para_name )$/;"	f	class:ParameterReader	signature:( const string& para_name )
+GraphicEnd	GraphicEnd.cpp	/^GraphicEnd::GraphicEnd() :$/;"	f	class:GraphicEnd	signature:()
+GraphicEnd	GraphicEnd.h	/^class GraphicEnd$/;"	c
+GraphicEnd2	GraphicEnd.h	/^class GraphicEnd2: public GraphicEnd$/;"	c	inherits:GraphicEnd
+GraphicEnd2	GraphicEnd2.cpp	/^GraphicEnd2::GraphicEnd2()$/;"	f	class:GraphicEnd2	signature:()
+GraphicEnd2::GraphicEnd2	GraphicEnd2.cpp	/^GraphicEnd2::GraphicEnd2()$/;"	f	class:GraphicEnd2	signature:()
+GraphicEnd2::compute3dPosition	GraphicEnd2.cpp	/^void GraphicEnd2::compute3dPosition( PLANE& plane, Mat depth )$/;"	f	class:GraphicEnd2	signature:( PLANE& plane, Mat depth )
+GraphicEnd2::extractKPandDesp	GraphicEnd2.cpp	/^PLANE GraphicEnd2::extractKPandDesp( Mat& rgb, Mat& dep)$/;"	f	class:GraphicEnd2	signature:( Mat& rgb, Mat& dep)
+GraphicEnd2::init	GraphicEnd2.cpp	/^void GraphicEnd2::init( SLAMEnd* pSLAMEnd)$/;"	f	class:GraphicEnd2	signature:( SLAMEnd* pSLAMEnd)
+GraphicEnd2::multiPnP	GraphicEnd2.cpp	/^RESULT_OF_MULTIPNP GraphicEnd2::multiPnP(  vector<PLANE>& plane1, vector<PLANE>& plane2, bool loopclosure, int frame_index, int minimum_inliers )$/;"	f	class:GraphicEnd2	signature:( vector<PLANE>& plane1, vector<PLANE>& plane2, bool loopclosure, int frame_index, int minimum_inliers )
+GraphicEnd2::readimage	GraphicEnd2.cpp	/^int GraphicEnd2::readimage()$/;"	f	class:GraphicEnd2	signature:()
+GraphicEnd2::run	GraphicEnd2.cpp	/^int GraphicEnd2::run()$/;"	f	class:GraphicEnd2	signature:()
+GraphicEnd2::~GraphicEnd2	GraphicEnd2.cpp	/^GraphicEnd2::~GraphicEnd2()$/;"	f	class:GraphicEnd2	signature:()
+GraphicEnd::GraphicEnd	GraphicEnd.cpp	/^GraphicEnd::GraphicEnd() :$/;"	f	class:GraphicEnd	signature:()
+GraphicEnd::_currCloud	GraphicEnd.h	/^    PointCloud::Ptr _currCloud, _lastCloud;   \/\/当前帧与上一帧点云$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_currDep	GraphicEnd.h	/^    Mat _currRGB, _currDep, _lastRGB, _lastDep; \/\/当前帧的灰度图\/深度图与上一帧的灰度\/深度图$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_currKF	GraphicEnd.h	/^    KEYFRAME _currKF;                              \/\/当前的关键帧$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_currRGB	GraphicEnd.h	/^    Mat _currRGB, _currDep, _lastRGB, _lastDep; \/\/当前帧的灰度图\/深度图与上一帧的灰度\/深度图$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_depPath	GraphicEnd.h	/^    string _rgbPath, _depPath, _pclPath;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_descriptor	GraphicEnd.h	/^    Ptr<DescriptorExtractor> _descriptor;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_detector	GraphicEnd.h	/^    Ptr<FeatureDetector> _detector;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_distance_threshold	GraphicEnd.h	/^    double _distance_threshold;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_error_odometry	GraphicEnd.h	/^    double _error_odometry;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_error_threshold	GraphicEnd.h	/^    double _error_threshold;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_index	GraphicEnd.h	/^    int _index;  \/\/当前的图像索引$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_keyframes	GraphicEnd.h	/^    vector<KEYFRAME> _keyframes;      \/\/过去的关键帧$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_kf_pos	GraphicEnd.h	/^    Eigen::Isometry3d _kf_pos;                \/\/机器人在关键帧上的位姿$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_lastCloud	GraphicEnd.h	/^    PointCloud::Ptr _currCloud, _lastCloud;   \/\/当前帧与上一帧点云$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_lastDep	GraphicEnd.h	/^    Mat _currRGB, _currDep, _lastRGB, _lastDep; \/\/当前帧的灰度图\/深度图与上一帧的灰度\/深度图$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_lastRGB	GraphicEnd.h	/^    Mat _currRGB, _currDep, _lastRGB, _lastDep; \/\/当前帧的灰度图\/深度图与上一帧的灰度\/深度图$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_loop_closure_detection	GraphicEnd.h	/^    bool _loop_closure_detection;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_loop_closure_error	GraphicEnd.h	/^    double _loop_closure_error;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_loopclosure_frames	GraphicEnd.h	/^    int _loopclosure_frames;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_loops	GraphicEnd.h	/^    int _loops;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_lost	GraphicEnd.h	/^    int _lost; \/\/丢失的帧数$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_lost_frames	GraphicEnd.h	/^    int _lost_frames;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_match_min_dist	GraphicEnd.h	/^    double _match_min_dist;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_max_planes	GraphicEnd.h	/^    int _max_planes;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_max_pos_change	GraphicEnd.h	/^    double _max_pos_change;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_min_error_plane	GraphicEnd.h	/^    double _min_error_plane;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_odo_last	GraphicEnd.h	/^    Eigen::Isometry3d _odo_last, _odo_this;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_odo_this	GraphicEnd.h	/^    Eigen::Isometry3d _odo_last, _odo_this;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_odometry	GraphicEnd.h	/^    vector<Eigen::Isometry3d> _odometry;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_pSLAMEnd	GraphicEnd.h	/^    SLAMEnd* _pSLAMEnd;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_pclPath	GraphicEnd.h	/^    string _rgbPath, _depPath, _pclPath;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_percent	GraphicEnd.h	/^    double _percent;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_present	GraphicEnd.h	/^    KEYFRAME _present;                            \/\/当前帧，也就是正在处理的那一帧$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_rgbPath	GraphicEnd.h	/^    string _rgbPath, _depPath, _pclPath;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_robot	GraphicEnd.h	/^    Eigen::Isometry3d _robot;                  \/\/机器人的位姿，含旋转矩阵与位移向量$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_robot2camera	GraphicEnd.h	/^    Eigen::Isometry3d _robot2camera;    \/\/机器人坐标系到相机坐标系的变换$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_seed	GraphicEnd.h	/^    vector<int> _seed; \/\/Loop Closure 种子关键帧$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_step_time	GraphicEnd.h	/^    int _step_time;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_success	GraphicEnd.h	/^    bool _success;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::_use_odometry	GraphicEnd.h	/^    bool _use_odometry;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::compute3dPosition	GraphicEnd.cpp	/^void GraphicEnd::compute3dPosition( PLANE& plane, Mat depth)$/;"	f	class:GraphicEnd	signature:( PLANE& plane, Mat depth)
+GraphicEnd::displayLC	GraphicEnd.cpp	/^void GraphicEnd::displayLC( int frame1, int frame2, double norm)$/;"	f	class:GraphicEnd	signature:( int frame1, int frame2, double norm)
+GraphicEnd::extractDescriptor	GraphicEnd.h	/^    Mat extractDescriptor( Mat image, vector<KeyPoint>& kp) $/;"	f	class:GraphicEnd	access:public	signature:( Mat image, vector<KeyPoint>& kp)
+GraphicEnd::extractKeypoints	GraphicEnd.h	/^    vector<KeyPoint> extractKeypoints(Mat image)        $/;"	f	class:GraphicEnd	access:public	signature:(Mat image)
+GraphicEnd::extractPlanes	GraphicEnd.cpp	/^vector<PLANE> GraphicEnd::extractPlanes( PointCloud::Ptr cloud)$/;"	f	class:GraphicEnd	signature:( PointCloud::Ptr cloud)
+GraphicEnd::extractPlanesAndGenerateImage	GraphicEnd.cpp	/^vector<PLANE> GraphicEnd::extractPlanesAndGenerateImage( PointCloud::Ptr cloud, Mat& rgb, Mat& dep)$/;"	f	class:GraphicEnd	signature:( PointCloud::Ptr cloud, Mat& rgb, Mat& dep)
+GraphicEnd::generateImageOnPlane	GraphicEnd.cpp	/^void GraphicEnd::generateImageOnPlane( Mat rgb, vector<PLANE>& planes, Mat depth)$/;"	f	class:GraphicEnd	signature:( Mat rgb, vector<PLANE>& planes, Mat depth)
+GraphicEnd::generateKeyFrame	GraphicEnd.cpp	/^void GraphicEnd::generateKeyFrame( Eigen::Isometry3d T )$/;"	f	class:GraphicEnd	signature:( Eigen::Isometry3d T )
+GraphicEnd::init	GraphicEnd.cpp	/^void GraphicEnd::init(SLAMEnd* pSLAMEnd)$/;"	f	class:GraphicEnd	signature:(SLAMEnd* pSLAMEnd)
+GraphicEnd::loopClosure	GraphicEnd.cpp	/^void GraphicEnd::loopClosure()$/;"	f	class:GraphicEnd	signature:()
+GraphicEnd::lostRecovery	GraphicEnd.cpp	/^void GraphicEnd::lostRecovery()$/;"	f	class:GraphicEnd	signature:()
+GraphicEnd::match	GraphicEnd.cpp	/^vector<DMatch> GraphicEnd::match( Mat desp1, Mat desp2 )$/;"	f	class:GraphicEnd	signature:( Mat desp1, Mat desp2 )
+GraphicEnd::match	GraphicEnd.cpp	/^vector<DMatch> GraphicEnd::match( vector<PLANE>& p1, vector<PLANE>& p2 )$/;"	f	class:GraphicEnd	signature:( vector<PLANE>& p1, vector<PLANE>& p2 )
+GraphicEnd::multiPnP	GraphicEnd.cpp	/^RESULT_OF_MULTIPNP GraphicEnd::multiPnP( vector<PLANE>& plane1, vector<PLANE>& plane2, bool loopclosure, int frame_index, int minimum_inliers)$/;"	f	class:GraphicEnd	signature:( vector<PLANE>& plane1, vector<PLANE>& plane2, bool loopclosure, int frame_index, int minimum_inliers)
+GraphicEnd::pnp	GraphicEnd.cpp	/^vector<DMatch> GraphicEnd::pnp( PLANE& p1, PLANE& p2)$/;"	f	class:GraphicEnd	signature:( PLANE& p1, PLANE& p2)
+GraphicEnd::readOdometry	GraphicEnd.h	/^    Eigen::Isometry3d readOdometry(ifstream& fin)$/;"	f	class:GraphicEnd	access:public	signature:(ifstream& fin)
+GraphicEnd::readimage	GraphicEnd.cpp	/^int GraphicEnd::readimage()$/;"	f	class:GraphicEnd	signature:()
+GraphicEnd::run	GraphicEnd.cpp	/^int GraphicEnd::run()$/;"	f	class:GraphicEnd	signature:()
+GraphicEnd::saveFinalResult	GraphicEnd.cpp	/^void GraphicEnd::saveFinalResult( string fileaddr )$/;"	f	class:GraphicEnd	signature:( string fileaddr )
+GraphicEnd::ss	GraphicEnd.h	/^    stringstream ss;$/;"	m	class:GraphicEnd	access:public
+GraphicEnd::~GraphicEnd	GraphicEnd.cpp	/^GraphicEnd::~GraphicEnd()$/;"	f	class:GraphicEnd	signature:()
+KEYFRAME	GraphicEnd.h	/^struct KEYFRAME \/\/关键帧: 一个关键帧由它上面的若干个平面组成$/;"	s
+KEYFRAME::frame_index	GraphicEnd.h	/^    int frame_index;$/;"	m	struct:KEYFRAME	access:public
+KEYFRAME::id	GraphicEnd.h	/^    int id;$/;"	m	struct:KEYFRAME	access:public
+KEYFRAME::planes	GraphicEnd.h	/^    vector<PLANE> planes;$/;"	m	struct:KEYFRAME	access:public
+LANDMARK_ID	const.h	/^inline int LANDMARK_ID(int& id){$/;"	f	signature:(int& id)
+LANDMARK_START_ID	const.h	/^const int LANDMARK_START_ID = 10000; \/\/暂定，这样最多只能处理10000帧$/;"	v
+MAGENTA	const.h	102;"	d
+Matching	exp1/exp1.cpp	/^Eigen::Isometry3d Matching( char* featureName, char* despName)$/;"	f	signature:( char* featureName, char* despName)
+MatchingPlanar	exp1/exp1.cpp	/^Eigen::Isometry3d MatchingPlanar( char* featureName, char* despName )$/;"	f	signature:( char* featureName, char* despName )
+PI	const.h	/^const double PI = 3.141592654;$/;"	v
+PLANE	GraphicEnd.h	/^struct PLANE$/;"	s
+PLANE	exp1/exp1.cpp	/^struct PLANE$/;"	s	file:
+PLANE::coff	GraphicEnd.h	/^    pcl::ModelCoefficients coff;  \/\/a,b,c,d$/;"	m	struct:PLANE	access:public
+PLANE::coff	exp1/exp1.cpp	/^    pcl::ModelCoefficients coff;  \/\/a,b,c,d$/;"	m	struct:PLANE	file:	access:public
+PLANE::desp	GraphicEnd.h	/^    Mat desp;                               \/\/ descriptor$/;"	m	struct:PLANE	access:public
+PLANE::desp	exp1/exp1.cpp	/^    Mat desp;                               \/\/ descriptor$/;"	m	struct:PLANE	file:	access:public
+PLANE::image	GraphicEnd.h	/^    Mat image;                             \/\/ grayscale image with mask$/;"	m	struct:PLANE	access:public
+PLANE::image	exp1/exp1.cpp	/^    Mat image;                             \/\/ grayscale image with mask$/;"	m	struct:PLANE	file:	access:public
+PLANE::kp	GraphicEnd.h	/^    vector<KeyPoint> kp;             \/\/ keypoints$/;"	m	struct:PLANE	access:public
+PLANE::kp	exp1/exp1.cpp	/^    vector<KeyPoint> kp;             \/\/ keypoints$/;"	m	struct:PLANE	file:	access:public
+PLANE::kp_pos	GraphicEnd.h	/^    vector<Point3f> kp_pos;        \/\/ 3d position of keypoints$/;"	m	struct:PLANE	access:public
+PLANE::kp_pos	exp1/exp1.cpp	/^    vector<Point3f> kp_pos;        \/\/ 3d position of keypoints$/;"	m	struct:PLANE	file:	access:public
+ParameterReader	ParameterReader.cpp	/^ParameterReader::ParameterReader(const string& para_file )$/;"	f	class:ParameterReader	signature:(const string& para_file )
+ParameterReader	ParameterReader.h	/^class ParameterReader$/;"	c
+ParameterReader::GetPara	ParameterReader.cpp	/^string ParameterReader::GetPara( const string& para_name )$/;"	f	class:ParameterReader	signature:( const string& para_name )
+ParameterReader::ParameterReader	ParameterReader.cpp	/^ParameterReader::ParameterReader(const string& para_file )$/;"	f	class:ParameterReader	signature:(const string& para_file )
+ParameterReader::_data_source	ParameterReader.h	/^    string _data_source; \/\/数据来源$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_descriptor_name	ParameterReader.h	/^    string _descriptor_name; \/\/描述子名称$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_detector_name	ParameterReader.h	/^    string _detector_name;\/\/特征相关：检测子名称$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_distance_threshold	ParameterReader.h	/^    double _distance_threshold; \/\/提取平面时的距离阈值$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_end_index	ParameterReader.h	/^    int _end_index;      \/\/终止索引$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_error_odometry	ParameterReader.h	/^    double _error_odometry; \/\/里程计误差$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_error_threshold	ParameterReader.h	/^    double _error_threshold;  \/\/错误阈值：标识相邻两帧位置不能相差太大$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_grid_size	ParameterReader.h	/^    double _grid_size;       \/\/Voxel Grid的大小$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_loop_closure_detection	ParameterReader.h	/^    string _loop_closure_detection; \/\/是否使用闭环检测$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_loop_closure_error	ParameterReader.h	/^    double _loop_closure_error; \/\/闭环误差$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_loopclosure_frames	ParameterReader.h	/^    int _loopclosure_frames;   \/\/闭环检测时随机取多少帧$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_lost_frames	ParameterReader.h	/^    int _lost_frames;  \/\/丢失判定$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_match_min_dist	ParameterReader.h	/^    double _match_min_dist; \/\/匹配时的最小距离$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_max_planes	ParameterReader.h	/^    int _max_planes; \/\/最大平面数量$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_max_pos_change	ParameterReader.h	/^    double _max_pos_change;$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_min_error_plane	ParameterReader.h	/^    double _min_error_plane; \/\/归类图像点时的误差阈值$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_optimize_step	ParameterReader.h	/^    int _optimize_step; \/\/优化步数$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_plane_percent	ParameterReader.h	/^    double _plane_percent;  \/\/平面点的百分比$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_robust_kernel	ParameterReader.h	/^    string _robust_kernel;$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_start_index	ParameterReader.h	/^    int _start_index;    \/\/起始索引$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_step_time	ParameterReader.h	/^    int _step_time;      \/\/调试时每一次循环的等待时间$/;"	m	class:ParameterReader	access:protected
+ParameterReader::_use_odometry	ParameterReader.h	/^    string _use_odometry; \/\/是否使用里程计$/;"	m	class:ParameterReader	access:protected
+ParameterReader::num2string	ParameterReader.h	/^    string num2string(double d)$/;"	f	class:ParameterReader	access:protected	signature:(double d)
+ParameterReader::num2string	ParameterReader.h	/^    string num2string(int d)$/;"	f	class:ParameterReader	access:protected	signature:(int d)
+ParameterReader::ss	ParameterReader.h	/^    stringstream ss;$/;"	m	class:ParameterReader	access:protected
+PointCloud	GraphicEnd.h	/^typedef pcl::PointCloud<PointT> PointCloud;$/;"	t
+PointCloud	convert2PCD.cpp	/^typedef pcl::PointCloud<PointT> PointCloud;$/;"	t	file:
+PointCloud	exp1/exp1.cpp	/^typedef pcl::PointCloud<PointT> PointCloud;$/;"	t	file:
+PointT	GraphicEnd.h	/^typedef pcl::PointXYZRGBA PointT;$/;"	t
+PointT	convert2PCD.cpp	/^typedef pcl::PointXYZRGBA PointT;$/;"	t	file:
+PointT	exp1/exp1.cpp	/^typedef pcl::PointXYZRGBA PointT;$/;"	t	file:
+RANSAC_CANNOT_FIND_ENOUGH_INLIERS	const.h	/^ public: RANSAC_CANNOT_FIND_ENOUGH_INLIERS() : EXCEPTION("RANSAC failed because cannot find enough inliers.") {$/;"	f	class:RANSAC_CANNOT_FIND_ENOUGH_INLIERS	access:public	signature:()
+RANSAC_CANNOT_FIND_ENOUGH_INLIERS	const.h	/^class RANSAC_CANNOT_FIND_ENOUGH_INLIERS: public EXCEPTION$/;"	c	inherits:EXCEPTION
+RANSAC_CANNOT_FIND_ENOUGH_INLIERS::RANSAC_CANNOT_FIND_ENOUGH_INLIERS	const.h	/^ public: RANSAC_CANNOT_FIND_ENOUGH_INLIERS() : EXCEPTION("RANSAC failed because cannot find enough inliers.") {$/;"	f	class:RANSAC_CANNOT_FIND_ENOUGH_INLIERS	access:public	signature:()
+RED	const.h	98;"	d
+RESET	const.h	96;"	d
+RESULT_OF_MULTIPNP	GraphicEnd.h	/^    RESULT_OF_MULTIPNP() {$/;"	f	struct:RESULT_OF_MULTIPNP	access:public	signature:()
+RESULT_OF_MULTIPNP	GraphicEnd.h	/^struct RESULT_OF_MULTIPNP$/;"	s
+RESULT_OF_MULTIPNP::RESULT_OF_MULTIPNP	GraphicEnd.h	/^    RESULT_OF_MULTIPNP() {$/;"	f	struct:RESULT_OF_MULTIPNP	access:public	signature:()
+RESULT_OF_MULTIPNP::T	GraphicEnd.h	/^    Eigen::Isometry3d T;$/;"	m	struct:RESULT_OF_MULTIPNP	access:public
+RESULT_OF_MULTIPNP::inliers	GraphicEnd.h	/^    int inliers;$/;"	m	struct:RESULT_OF_MULTIPNP	access:public
+RESULT_OF_MULTIPNP::norm	GraphicEnd.h	/^    double norm;$/;"	m	struct:RESULT_OF_MULTIPNP	access:public
+ROBOT_ID	const.h	/^inline int ROBOT_ID(int& id)$/;"	f	signature:(int& id)
+ROBOT_START_ID	const.h	/^const int ROBOT_START_ID = 0;$/;"	v
+SLAMEnd	GraphicEnd.h	/^    SLAMEnd() {$/;"	f	class:SLAMEnd	access:public	signature:()
+SLAMEnd	GraphicEnd.h	/^class SLAMEnd$/;"	c
+SLAMEnd::SLAMEnd	GraphicEnd.h	/^    SLAMEnd() {$/;"	f	class:SLAMEnd	access:public	signature:()
+SLAMEnd::_pGraphicEnd	GraphicEnd.h	/^    GraphicEnd* _pGraphicEnd;$/;"	m	class:SLAMEnd	access:public
+SLAMEnd::_robustKernel	GraphicEnd.h	/^    RobustKernel* _robustKernel;$/;"	m	class:SLAMEnd	access:public
+SLAMEnd::globalOptimizer	GraphicEnd.h	/^    SparseOptimizer globalOptimizer;$/;"	m	class:SLAMEnd	access:public
+SLAMEnd::init	GraphicEnd.h	/^    void init( GraphicEnd* p)$/;"	f	class:SLAMEnd	access:public	signature:( GraphicEnd* p)
+SLAMEnd::solver	GraphicEnd.h	/^    OptimizationAlgorithmLevenberg* solver;$/;"	m	class:SLAMEnd	access:public
+SLAMEnd::~SLAMEnd	GraphicEnd.h	/^    ~SLAMEnd() {$/;"	f	class:SLAMEnd	access:public	signature:()
+SlamBlockSolver	GraphicEnd.h	/^typedef BlockSolver_6_3 SlamBlockSolver;$/;"	t
+SlamLinearSolver	GraphicEnd.h	/^typedef LinearSolverCSparse<SlamBlockSolver::PoseMatrixType> SlamLinearSolver;$/;"	t
+T	GraphicEnd.h	/^    Eigen::Isometry3d T;$/;"	m	struct:RESULT_OF_MULTIPNP	access:public
+WHITE	const.h	104;"	d
+YELLOW	const.h	100;"	d
+_currCloud	GraphicEnd.h	/^    PointCloud::Ptr _currCloud, _lastCloud;   \/\/当前帧与上一帧点云$/;"	m	class:GraphicEnd	access:public
+_currDep	GraphicEnd.h	/^    Mat _currRGB, _currDep, _lastRGB, _lastDep; \/\/当前帧的灰度图\/深度图与上一帧的灰度\/深度图$/;"	m	class:GraphicEnd	access:public
+_currKF	GraphicEnd.h	/^    KEYFRAME _currKF;                              \/\/当前的关键帧$/;"	m	class:GraphicEnd	access:public
+_currRGB	GraphicEnd.h	/^    Mat _currRGB, _currDep, _lastRGB, _lastDep; \/\/当前帧的灰度图\/深度图与上一帧的灰度\/深度图$/;"	m	class:GraphicEnd	access:public
+_data_source	ParameterReader.h	/^    string _data_source; \/\/数据来源$/;"	m	class:ParameterReader	access:protected
+_depPath	GraphicEnd.h	/^    string _rgbPath, _depPath, _pclPath;$/;"	m	class:GraphicEnd	access:public
+_descriptor	GraphicEnd.h	/^    Ptr<DescriptorExtractor> _descriptor;$/;"	m	class:GraphicEnd	access:public
+_descriptor_name	ParameterReader.h	/^    string _descriptor_name; \/\/描述子名称$/;"	m	class:ParameterReader	access:protected
+_detector	GraphicEnd.h	/^    Ptr<FeatureDetector> _detector;$/;"	m	class:GraphicEnd	access:public
+_detector_name	ParameterReader.h	/^    string _detector_name;\/\/特征相关：检测子名称$/;"	m	class:ParameterReader	access:protected
+_distance_threshold	GraphicEnd.h	/^    double _distance_threshold;$/;"	m	class:GraphicEnd	access:public
+_distance_threshold	ParameterReader.h	/^    double _distance_threshold; \/\/提取平面时的距离阈值$/;"	m	class:ParameterReader	access:protected
+_end_index	ParameterReader.h	/^    int _end_index;      \/\/终止索引$/;"	m	class:ParameterReader	access:protected
+_error_odometry	GraphicEnd.h	/^    double _error_odometry;$/;"	m	class:GraphicEnd	access:public
+_error_odometry	ParameterReader.h	/^    double _error_odometry; \/\/里程计误差$/;"	m	class:ParameterReader	access:protected
+_error_threshold	GraphicEnd.h	/^    double _error_threshold;$/;"	m	class:GraphicEnd	access:public
+_error_threshold	ParameterReader.h	/^    double _error_threshold;  \/\/错误阈值：标识相邻两帧位置不能相差太大$/;"	m	class:ParameterReader	access:protected
+_grid_size	ParameterReader.h	/^    double _grid_size;       \/\/Voxel Grid的大小$/;"	m	class:ParameterReader	access:protected
+_index	GraphicEnd.h	/^    int _index;  \/\/当前的图像索引$/;"	m	class:GraphicEnd	access:public
+_keyframes	GraphicEnd.h	/^    vector<KEYFRAME> _keyframes;      \/\/过去的关键帧$/;"	m	class:GraphicEnd	access:public
+_kf_pos	GraphicEnd.h	/^    Eigen::Isometry3d _kf_pos;                \/\/机器人在关键帧上的位姿$/;"	m	class:GraphicEnd	access:public
+_lastCloud	GraphicEnd.h	/^    PointCloud::Ptr _currCloud, _lastCloud;   \/\/当前帧与上一帧点云$/;"	m	class:GraphicEnd	access:public
+_lastDep	GraphicEnd.h	/^    Mat _currRGB, _currDep, _lastRGB, _lastDep; \/\/当前帧的灰度图\/深度图与上一帧的灰度\/深度图$/;"	m	class:GraphicEnd	access:public
+_lastRGB	GraphicEnd.h	/^    Mat _currRGB, _currDep, _lastRGB, _lastDep; \/\/当前帧的灰度图\/深度图与上一帧的灰度\/深度图$/;"	m	class:GraphicEnd	access:public
+_loop_closure_detection	GraphicEnd.h	/^    bool _loop_closure_detection;$/;"	m	class:GraphicEnd	access:public
+_loop_closure_detection	ParameterReader.h	/^    string _loop_closure_detection; \/\/是否使用闭环检测$/;"	m	class:ParameterReader	access:protected
+_loop_closure_error	GraphicEnd.h	/^    double _loop_closure_error;$/;"	m	class:GraphicEnd	access:public
+_loop_closure_error	ParameterReader.h	/^    double _loop_closure_error; \/\/闭环误差$/;"	m	class:ParameterReader	access:protected
+_loopclosure_frames	GraphicEnd.h	/^    int _loopclosure_frames;$/;"	m	class:GraphicEnd	access:public
+_loopclosure_frames	ParameterReader.h	/^    int _loopclosure_frames;   \/\/闭环检测时随机取多少帧$/;"	m	class:ParameterReader	access:protected
+_loops	GraphicEnd.h	/^    int _loops;$/;"	m	class:GraphicEnd	access:public
+_lost	GraphicEnd.h	/^    int _lost; \/\/丢失的帧数$/;"	m	class:GraphicEnd	access:public
+_lost_frames	GraphicEnd.h	/^    int _lost_frames;$/;"	m	class:GraphicEnd	access:public
+_lost_frames	ParameterReader.h	/^    int _lost_frames;  \/\/丢失判定$/;"	m	class:ParameterReader	access:protected
+_match_min_dist	GraphicEnd.h	/^    double _match_min_dist;$/;"	m	class:GraphicEnd	access:public
+_match_min_dist	ParameterReader.h	/^    double _match_min_dist; \/\/匹配时的最小距离$/;"	m	class:ParameterReader	access:protected
+_max_planes	GraphicEnd.h	/^    int _max_planes;$/;"	m	class:GraphicEnd	access:public
+_max_planes	ParameterReader.h	/^    int _max_planes; \/\/最大平面数量$/;"	m	class:ParameterReader	access:protected
+_max_pos_change	GraphicEnd.h	/^    double _max_pos_change;$/;"	m	class:GraphicEnd	access:public
+_max_pos_change	ParameterReader.h	/^    double _max_pos_change;$/;"	m	class:ParameterReader	access:protected
+_min_error_plane	GraphicEnd.h	/^    double _min_error_plane;$/;"	m	class:GraphicEnd	access:public
+_min_error_plane	ParameterReader.h	/^    double _min_error_plane; \/\/归类图像点时的误差阈值$/;"	m	class:ParameterReader	access:protected
+_odo_last	GraphicEnd.h	/^    Eigen::Isometry3d _odo_last, _odo_this;$/;"	m	class:GraphicEnd	access:public
+_odo_this	GraphicEnd.h	/^    Eigen::Isometry3d _odo_last, _odo_this;$/;"	m	class:GraphicEnd	access:public
+_odometry	GraphicEnd.h	/^    vector<Eigen::Isometry3d> _odometry;$/;"	m	class:GraphicEnd	access:public
+_optimize_step	ParameterReader.h	/^    int _optimize_step; \/\/优化步数$/;"	m	class:ParameterReader	access:protected
+_pGraphicEnd	GraphicEnd.h	/^    GraphicEnd* _pGraphicEnd;$/;"	m	class:SLAMEnd	access:public
+_pSLAMEnd	GraphicEnd.h	/^    SLAMEnd* _pSLAMEnd;$/;"	m	class:GraphicEnd	access:public
+_pclPath	GraphicEnd.h	/^    string _rgbPath, _depPath, _pclPath;$/;"	m	class:GraphicEnd	access:public
+_percent	GraphicEnd.h	/^    double _percent;$/;"	m	class:GraphicEnd	access:public
+_plane_percent	ParameterReader.h	/^    double _plane_percent;  \/\/平面点的百分比$/;"	m	class:ParameterReader	access:protected
+_present	GraphicEnd.h	/^    KEYFRAME _present;                            \/\/当前帧，也就是正在处理的那一帧$/;"	m	class:GraphicEnd	access:public
+_rgbPath	GraphicEnd.h	/^    string _rgbPath, _depPath, _pclPath;$/;"	m	class:GraphicEnd	access:public
+_robot	GraphicEnd.h	/^    Eigen::Isometry3d _robot;                  \/\/机器人的位姿，含旋转矩阵与位移向量$/;"	m	class:GraphicEnd	access:public
+_robot2camera	GraphicEnd.h	/^    Eigen::Isometry3d _robot2camera;    \/\/机器人坐标系到相机坐标系的变换$/;"	m	class:GraphicEnd	access:public
+_robustKernel	GraphicEnd.h	/^    RobustKernel* _robustKernel;$/;"	m	class:SLAMEnd	access:public
+_robust_kernel	ParameterReader.h	/^    string _robust_kernel;$/;"	m	class:ParameterReader	access:protected
+_seed	GraphicEnd.h	/^    vector<int> _seed; \/\/Loop Closure 种子关键帧$/;"	m	class:GraphicEnd	access:public
+_start_index	ParameterReader.h	/^    int _start_index;    \/\/起始索引$/;"	m	class:ParameterReader	access:protected
+_step_time	GraphicEnd.h	/^    int _step_time;$/;"	m	class:GraphicEnd	access:public
+_step_time	ParameterReader.h	/^    int _step_time;      \/\/调试时每一次循环的等待时间$/;"	m	class:ParameterReader	access:protected
+_success	GraphicEnd.h	/^    bool _success;$/;"	m	class:GraphicEnd	access:public
+_use_odometry	GraphicEnd.h	/^    bool _use_odometry;$/;"	m	class:GraphicEnd	access:public
+_use_odometry	ParameterReader.h	/^    string _use_odometry; \/\/是否使用里程计$/;"	m	class:ParameterReader	access:protected
+camera_cx	ParameterReader.cpp	/^double camera_fx, camera_fy,  camera_cx, camera_cy, camera_factor;$/;"	v
+camera_cx	convert2PCD.cpp	/^const double camera_cx = 319.5;$/;"	v
+camera_cx	planarFeatures.cpp	/^const double camera_cx = 320.0, camera_cy = 235.5, camera_fx = 525.0, camera_fy = 525.0;$/;"	v
+camera_cy	ParameterReader.cpp	/^double camera_fx, camera_fy,  camera_cx, camera_cy, camera_factor;$/;"	v
+camera_cy	convert2PCD.cpp	/^const double camera_cy = 235.5;$/;"	v
+camera_cy	planarFeatures.cpp	/^const double camera_cx = 320.0, camera_cy = 235.5, camera_fx = 525.0, camera_fy = 525.0;$/;"	v
+camera_factor	ParameterReader.cpp	/^double camera_fx, camera_fy,  camera_cx, camera_cy, camera_factor;$/;"	v
+camera_factor	convert2PCD.cpp	/^const double camera_factor = 1000;$/;"	v
+camera_factor	planarFeatures.cpp	/^const double camera_factor = 1000.0;$/;"	v
+camera_fx	ParameterReader.cpp	/^double camera_fx, camera_fy,  camera_cx, camera_cy, camera_factor;$/;"	v
+camera_fx	convert2PCD.cpp	/^const double camera_fx = 525.0;$/;"	v
+camera_fx	planarFeatures.cpp	/^const double camera_cx = 320.0, camera_cy = 235.5, camera_fx = 525.0, camera_fy = 525.0;$/;"	v
+camera_fy	ParameterReader.cpp	/^double camera_fx, camera_fy,  camera_cx, camera_cy, camera_factor;$/;"	v
+camera_fy	convert2PCD.cpp	/^const double camera_fy = 525.0;$/;"	v
+camera_fy	planarFeatures.cpp	/^const double camera_cx = 320.0, camera_cy = 235.5, camera_fx = 525.0, camera_fy = 525.0;$/;"	v
+coff	GraphicEnd.h	/^    pcl::ModelCoefficients coff;  \/\/a,b,c,d$/;"	m	struct:PLANE	access:public
+coff	exp1/exp1.cpp	/^    pcl::ModelCoefficients coff;  \/\/a,b,c,d$/;"	m	struct:PLANE	file:	access:public
+compute3dPosition	GraphicEnd.cpp	/^void GraphicEnd::compute3dPosition( PLANE& plane, Mat depth)$/;"	f	class:GraphicEnd	signature:( PLANE& plane, Mat depth)
+compute3dPosition	GraphicEnd2.cpp	/^void GraphicEnd2::compute3dPosition( PLANE& plane, Mat depth )$/;"	f	class:GraphicEnd2	signature:( PLANE& plane, Mat depth )
+compute3dPosition	exp1/exp1.cpp	/^void compute3dPosition( PLANE& plane, Mat& depth)$/;"	f	signature:( PLANE& plane, Mat& depth)
+cv2g2o	const.h	/^inline Eigen::Vector3d cv2g2o(Point3f p)$/;"	f	signature:(Point3f p)
+dep_1	exp1/exp1.cpp	/^Mat rgb_1, rgb_2, dep_1, dep_2;$/;"	v
+dep_2	exp1/exp1.cpp	/^Mat rgb_1, rgb_2, dep_1, dep_2;$/;"	v
+desp	GraphicEnd.h	/^    Mat desp;                               \/\/ descriptor$/;"	m	struct:PLANE	access:public
+desp	const.h	/^    string desp;$/;"	m	class:EXCEPTION	access:protected
+desp	exp1/exp1.cpp	/^    Mat desp;                               \/\/ descriptor$/;"	m	struct:PLANE	file:	access:public
+diff_SE2	const.h	/^inline double diff_SE2(const SE2 p1, const SE2 p2)$/;"	f	signature:(const SE2 p1, const SE2 p2)
+disp	const.h	/^    void disp() {$/;"	f	class:EXCEPTION	access:public	signature:()
+displayLC	GraphicEnd.cpp	/^void GraphicEnd::displayLC( int frame1, int frame2, double norm)$/;"	f	class:GraphicEnd	signature:( int frame1, int frame2, double norm)
+extractDescriptor	GraphicEnd.h	/^    Mat extractDescriptor( Mat image, vector<KeyPoint>& kp) $/;"	f	class:GraphicEnd	access:public	signature:( Mat image, vector<KeyPoint>& kp)
+extractDescriptor	exp1/exp1.cpp	/^inline Mat extractDescriptor( Mat& image, vector<KeyPoint>& kp, char* despName) $/;"	f	signature:( Mat& image, vector<KeyPoint>& kp, char* despName)
+extractKPandDesp	GraphicEnd2.cpp	/^PLANE GraphicEnd2::extractKPandDesp( Mat& rgb, Mat& dep)$/;"	f	class:GraphicEnd2	signature:( Mat& rgb, Mat& dep)
+extractKeypoints	GraphicEnd.h	/^    vector<KeyPoint> extractKeypoints(Mat image)        $/;"	f	class:GraphicEnd	access:public	signature:(Mat image)
+extractKeypoints	exp1/exp1.cpp	/^inline vector<KeyPoint> extractKeypoints(Mat& image, char* featureName)        $/;"	f	signature:(Mat& image, char* featureName)
+extractPlanes	GraphicEnd.cpp	/^vector<PLANE> GraphicEnd::extractPlanes( PointCloud::Ptr cloud)$/;"	f	class:GraphicEnd	signature:( PointCloud::Ptr cloud)
+extractPlanesAndGenerateImage	GraphicEnd.cpp	/^vector<PLANE> GraphicEnd::extractPlanesAndGenerateImage( PointCloud::Ptr cloud, Mat& rgb, Mat& dep)$/;"	f	class:GraphicEnd	signature:( PointCloud::Ptr cloud, Mat& rgb, Mat& dep)
+extractplanes	exp1/exp1.cpp	/^vector<PLANE> extractplanes( PointCloud::Ptr cloud, Mat& rgb, Mat& dep )$/;"	f	signature:( PointCloud::Ptr cloud, Mat& rgb, Mat& dep )
+frame_index	GraphicEnd.h	/^    int frame_index;$/;"	m	struct:KEYFRAME	access:public
+g2o2cv	const.h	/^inline Point3f g2o2cv(Eigen::Vector3d p)$/;"	f	signature:(Eigen::Vector3d p)
+generateImageOnPlane	GraphicEnd.cpp	/^void GraphicEnd::generateImageOnPlane( Mat rgb, vector<PLANE>& planes, Mat depth)$/;"	f	class:GraphicEnd	signature:( Mat rgb, vector<PLANE>& planes, Mat depth)
+generateKeyFrame	GraphicEnd.cpp	/^void GraphicEnd::generateKeyFrame( Eigen::Isometry3d T )$/;"	f	class:GraphicEnd	signature:( Eigen::Isometry3d T )
+globalOptimizer	GraphicEnd.h	/^    SparseOptimizer globalOptimizer;$/;"	m	class:SLAMEnd	access:public
+id	GraphicEnd.h	/^    int id;$/;"	m	struct:KEYFRAME	access:public
+image	GraphicEnd.h	/^    Mat image;                             \/\/ grayscale image with mask$/;"	m	struct:PLANE	access:public
+image	exp1/exp1.cpp	/^    Mat image;                             \/\/ grayscale image with mask$/;"	m	struct:PLANE	file:	access:public
+init	GraphicEnd.cpp	/^void GraphicEnd::init(SLAMEnd* pSLAMEnd)$/;"	f	class:GraphicEnd	signature:(SLAMEnd* pSLAMEnd)
+init	GraphicEnd.h	/^    void init( GraphicEnd* p)$/;"	f	class:SLAMEnd	access:public	signature:( GraphicEnd* p)
+init	GraphicEnd2.cpp	/^void GraphicEnd2::init( SLAMEnd* pSLAMEnd)$/;"	f	class:GraphicEnd2	signature:( SLAMEnd* pSLAMEnd)
+inliers	GraphicEnd.h	/^    int inliers;$/;"	m	struct:RESULT_OF_MULTIPNP	access:public
+isPlanar	planarFeatures.cpp	/^bool isPlanar( KeyPoint kp, Mat& dep, Mat& rgb)$/;"	f	signature:( KeyPoint kp, Mat& dep, Mat& rgb)
+kp	GraphicEnd.h	/^    vector<KeyPoint> kp;             \/\/ keypoints$/;"	m	struct:PLANE	access:public
+kp	exp1/exp1.cpp	/^    vector<KeyPoint> kp;             \/\/ keypoints$/;"	m	struct:PLANE	file:	access:public
+kp_pos	GraphicEnd.h	/^    vector<Point3f> kp_pos;        \/\/ 3d position of keypoints$/;"	m	struct:PLANE	access:public
+kp_pos	exp1/exp1.cpp	/^    vector<Point3f> kp_pos;        \/\/ 3d position of keypoints$/;"	m	struct:PLANE	file:	access:public
+landmarkNoiseX	const.h	/^const double landmarkNoiseX = 0.05, landmarkNoiseXL = 2, landmarkNoiseY = 0.05;   \/\/路标点测量的噪声估计值，认为x方向超过最大距离时，误差很大，否则误差约在cm级别$/;"	v
+landmarkNoiseXL	const.h	/^const double landmarkNoiseX = 0.05, landmarkNoiseXL = 2, landmarkNoiseY = 0.05;   \/\/路标点测量的噪声估计值，认为x方向超过最大距离时，误差很大，否则误差约在cm级别$/;"	v
+landmarkNoiseY	const.h	/^const double landmarkNoiseX = 0.05, landmarkNoiseXL = 2, landmarkNoiseY = 0.05;   \/\/路标点测量的噪声估计值，认为x方向超过最大距离时，误差很大，否则误差约在cm级别$/;"	v
+loopClosure	GraphicEnd.cpp	/^void GraphicEnd::loopClosure()$/;"	f	class:GraphicEnd	signature:()
+lostRecovery	GraphicEnd.cpp	/^void GraphicEnd::lostRecovery()$/;"	f	class:GraphicEnd	signature:()
+main	convert2PCD.cpp	/^int main( int argc, char** argv)$/;"	f	signature:( int argc, char** argv)
+main	exp1/exp1.cpp	/^int main( int argc, char** argv )$/;"	f	signature:( int argc, char** argv )
+main	generateTrajectory.cpp	/^int main(int argc, char** argv)$/;"	f	signature:(int argc, char** argv)
+main	planarFeatures.cpp	/^int main( int argc, char** argv)$/;"	f	signature:( int argc, char** argv)
+main	run_SLAM.cpp	/^int main( int argc, char** argv )$/;"	f	signature:( int argc, char** argv )
+main	run_SLAM_imageonly.cpp	/^int main( int argc, char** argv )$/;"	f	signature:( int argc, char** argv )
+main	saveOutput.cpp	/^int main( int argc, char ** argv)$/;"	f	signature:( int argc, char ** argv)
+main	testRandom.cpp	/^int main(int argc, char** argv )$/;"	f	signature:(int argc, char** argv )
+main	viewLC.cpp	/^int main( int argc, char** argv )$/;"	f	signature:( int argc, char** argv )
+match	GraphicEnd.cpp	/^vector<DMatch> GraphicEnd::match( Mat desp1, Mat desp2 )$/;"	f	class:GraphicEnd	signature:( Mat desp1, Mat desp2 )
+match	GraphicEnd.cpp	/^vector<DMatch> GraphicEnd::match( vector<PLANE>& p1, vector<PLANE>& p2 )$/;"	f	class:GraphicEnd	signature:( vector<PLANE>& p1, vector<PLANE>& p2 )
+match	exp1/exp1.cpp	/^vector<DMatch> match( Mat desp1, Mat desp2 )$/;"	f	signature:( Mat desp1, Mat desp2 )
+match	exp1/exp1.cpp	/^vector<DMatch> match( vector<PLANE>& p1, vector<PLANE>& p2 )$/;"	f	signature:( vector<PLANE>& p1, vector<PLANE>& p2 )
+multiPnP	GraphicEnd.cpp	/^RESULT_OF_MULTIPNP GraphicEnd::multiPnP( vector<PLANE>& plane1, vector<PLANE>& plane2, bool loopclosure, int frame_index, int minimum_inliers)$/;"	f	class:GraphicEnd	signature:( vector<PLANE>& plane1, vector<PLANE>& plane2, bool loopclosure, int frame_index, int minimum_inliers)
+multiPnP	GraphicEnd2.cpp	/^RESULT_OF_MULTIPNP GraphicEnd2::multiPnP(  vector<PLANE>& plane1, vector<PLANE>& plane2, bool loopclosure, int frame_index, int minimum_inliers )$/;"	f	class:GraphicEnd2	signature:( vector<PLANE>& plane1, vector<PLANE>& plane2, bool loopclosure, int frame_index, int minimum_inliers )
+norm	GraphicEnd.h	/^    double norm;$/;"	m	struct:RESULT_OF_MULTIPNP	access:public
+num2string	ParameterReader.h	/^    string num2string(double d)$/;"	f	class:ParameterReader	access:protected	signature:(double d)
+num2string	ParameterReader.h	/^    string num2string(int d)$/;"	f	class:ParameterReader	access:protected	signature:(int d)
+parameter_file_addr	const.h	/^const string parameter_file_addr = "\/home\/tyu\/slam3d_gx\/parameters.yaml";$/;"	v
+planarPnP	exp1/exp1.cpp	/^Eigen::Isometry3d planarPnP( vector<PLANE>& plane1, vector<PLANE>& plane2 )$/;"	f	signature:( vector<PLANE>& plane1, vector<PLANE>& plane2 )
+planes	GraphicEnd.h	/^    vector<PLANE> planes;$/;"	m	struct:KEYFRAME	access:public
+pnp	GraphicEnd.cpp	/^vector<DMatch> GraphicEnd::pnp( PLANE& p1, PLANE& p2)$/;"	f	class:GraphicEnd	signature:( PLANE& p1, PLANE& p2)
+pnp	exp1/exp1.cpp	/^vector<DMatch> pnp( PLANE& p1, PLANE& p2)$/;"	f	signature:( PLANE& p1, PLANE& p2)
+readOdometry	GraphicEnd.h	/^    Eigen::Isometry3d readOdometry(ifstream& fin)$/;"	f	class:GraphicEnd	access:public	signature:(ifstream& fin)
+readimage	GraphicEnd.cpp	/^int GraphicEnd::readimage()$/;"	f	class:GraphicEnd	signature:()
+readimage	GraphicEnd2.cpp	/^int GraphicEnd2::readimage()$/;"	f	class:GraphicEnd2	signature:()
+rgb_1	exp1/exp1.cpp	/^Mat rgb_1, rgb_2, dep_1, dep_2;$/;"	v
+rgb_2	exp1/exp1.cpp	/^Mat rgb_1, rgb_2, dep_1, dep_2;$/;"	v
+rotationNoise	const.h	/^const double rotationNoise = 0.05;\/\/角度测量设备误差$/;"	v
+run	GraphicEnd.cpp	/^int GraphicEnd::run()$/;"	f	class:GraphicEnd	signature:()
+run	GraphicEnd2.cpp	/^int GraphicEnd2::run()$/;"	f	class:GraphicEnd2	signature:()
+saveFinalResult	GraphicEnd.cpp	/^void GraphicEnd::saveFinalResult( string fileaddr )$/;"	f	class:GraphicEnd	signature:( string fileaddr )
+solver	GraphicEnd.h	/^    OptimizationAlgorithmLevenberg* solver;$/;"	m	class:SLAMEnd	access:public
+ss	GraphicEnd.h	/^    stringstream ss;$/;"	m	class:GraphicEnd	access:public
+ss	ParameterReader.h	/^    stringstream ss;$/;"	m	class:ParameterReader	access:protected
+transNoiseX	const.h	/^const double transNoiseX = 0.005, transNoiseY = 0.005; \/\/惯性测量设备误差$/;"	v
+transNoiseY	const.h	/^const double transNoiseX = 0.005, transNoiseY = 0.005; \/\/惯性测量设备误差$/;"	v
+usage	convert2PCD.cpp	/^void usage()$/;"	f	signature:()
+usage	exp1/exp1.cpp	/^void usage()$/;"	f	signature:()
+usage	generateTrajectory.cpp	/^int usage()$/;"	f	signature:()
+usage	planarFeatures.cpp	/^void usage()$/;"	f	signature:()
+usage	run_SLAM.cpp	/^void usage()$/;"	f	signature:()
+usage	run_SLAM_imageonly.cpp	/^void usage()$/;"	f	signature:()
+usage	saveOutput.cpp	/^void usage()$/;"	f	signature:()
+usage	viewLC.cpp	/^void usage()$/;"	f	signature:()
+~GraphicEnd	GraphicEnd.cpp	/^GraphicEnd::~GraphicEnd()$/;"	f	class:GraphicEnd	signature:()
+~GraphicEnd2	GraphicEnd2.cpp	/^GraphicEnd2::~GraphicEnd2()$/;"	f	class:GraphicEnd2	signature:()
+~SLAMEnd	GraphicEnd.h	/^    ~SLAMEnd() {$/;"	f	class:SLAMEnd	access:public	signature:()
